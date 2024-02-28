@@ -14,12 +14,13 @@ $this->setFrameMode(true);
 ?>
 
 <?$APPLICATION->IncludeComponent(
-    "demo:lesson_completed",
+    "demo:show_points",
     ".default",
     array(
-        "LESSON_ID" => $ElementID // Замените на ID текущего урока
-    )
+
+	),
 );?>
+
 <br />
 <?if($arParams["USE_RSS"]=="Y"):?>
 	<?
