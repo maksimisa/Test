@@ -41,12 +41,16 @@
 	$component
 );?>
 
+
+
 <?$APPLICATION->IncludeComponent(
     "demo:lesson_complete_button",
-    "",
-    array(),
-    $component
+    ".default",
+    array(
+		"BUTTON_TEXT" => "Завершить урок",
+	),
 );?>
+
 
 
 <?/*

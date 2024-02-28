@@ -13,37 +13,14 @@
 $this->setFrameMode(true);
 ?>
 
-123
-
-<?/*
-require_once($_SERVER['DOCUMENT_ROOT'] . 'bitrix/templates/furniture_dark-blue/components/bitrix/news/.default/LessonHelper.php');
-
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['complete_lesson']) && $_POST['complete_lesson'] == 'Y') {
-
-    $lessonID = (int)$_POST['lesson_id'];
-    $userID = $USER->GetID();
-
-    $pointsEarned = LessonHelper::calculatePointsForLesson($lessonID);
-
-    $arFields = Array(
-        "MODIFIED_BY" => $USER->GetID(),
-        "IBLOCK_SECTION_ID" => false,
-        "IBLOCK_ID" => "scores",
-        "PROPERTY_VALUES"=> array(
-            "USER" => $userID,
-            "LESSON" => $lessonID,
-            "POINTS" => $pointsEarned,
-        ),
-        "NAME" => "Прохождение урока " . $lessonID,
-        "ACTIVE" => "Y",
-    );
-
-    $oElement = new CIBlockElement();
-    $lessonCompletionID = $oElement->Add($arFields);
-}
-*/?>
-
-
+<?$APPLICATION->IncludeComponent(
+    "demo:lesson_completed",
+    ".default",
+    array(
+        "LESSON_ID" => $ElementID // Замените на ID текущего урока
+    )
+);?>
+<br />
 <?if($arParams["USE_RSS"]=="Y"):?>
 	<?
 	if(method_exists($APPLICATION, 'addheadstring'))

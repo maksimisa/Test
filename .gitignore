@@ -32,3 +32,8 @@ home/bitrix/www/local/components/your_company/lesson_completion/template.php
 home/bitrix/www/local/templates/test/components/bitrix/button/script.js
 home/bitrix/www/local/templates/test/components/bitrix/button/template.php
 home/bitrix/www/local/templates/test/components/bitrix/news.list/show_more_news/template.php
+home/bitrix/www/local/components/demo/lesson_complete_button/script.js
+home/bitrix/www/local/components/demo/lesson_completed/.parameters.php
+home/bitrix/www/local/components/demo/lesson_completed/component.php
+home/bitrix/www/local/components/demo/lesson_completed/templates/.default/template.php
+home/bitrix/www/local/components/demo/lesson_complete_button/templates/template.php
